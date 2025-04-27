@@ -58,7 +58,7 @@ It uses **Natural Language Processing** with **spaCy** to detect technical skill
    To launch the app, run:
 
    ```bash
-   streamlit run app.py
+   streamlit run app2.py
    ```
 
 7. **View the application**
