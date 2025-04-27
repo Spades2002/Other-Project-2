@@ -1,7 +1,7 @@
 # 📄 Engineering Job Finder
 
 A **Streamlit** web application that helps engineering graduates find **entry-level jobs** based on the skills extracted from their **CV (PDF)**.  
-It uses **Natural Language Processing (NLP)** with **spaCy** to detect technical skills and then searches for matching job listings using the **SerpApi** Google Jobs engine.
+It uses **Natural Language Processing** with **spaCy** to detect technical skills and then searches for matching job listings using the **SerpApi** Google Jobs engine.
 
 ## 🚀 Features
 
@@ -23,40 +23,47 @@ It uses **Natural Language Processing (NLP)** with **spaCy** to detect technical
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/engineering-job-finder.git
+   git clone https://github.com/Spades2002/Other-Project-2
    cd engineering-job-finder
    ```
 
-2. **Install dependencies**
+2. **Open the project in your code editor**
 
-   It is recommended to use a virtual environment.
+   - Open **Visual Studio Code** (or any other code editor you prefer).
+   - Select **File > Open Folder** and choose the project folder.
+
+3. **Install the dependencies**
+
+   You can install the required dependencies directly by running the following command in your terminal:
 
    ```bash
-   pip install -r requirements.txt
+   pip install streamlit spacy pymupdf serpapi
    ```
 
-   Make sure you have the following key packages installed:
-   - streamlit
-   - pymupdf
-   - spacy
-   - serpapi
+4. **Download the spaCy model**
 
-3. **Download spaCy model**
+   Download the necessary spaCy language model:
 
    ```bash
    python -m spacy download en_core_web_md
    ```
 
-4. **Set up your SerpApi API key**
+5. **Set up your SerpApi API key**
 
    - Sign up for a [SerpApi account](https://serpapi.com/users/sign_up) if you do not have one.
-   - Replace `"API KEY HERE"` in the code with your actual API key.
+   - In the code, replace `"API KEY HERE"` with your actual API key.
 
-5. **Run the Streamlit app**
+6. **Run the Streamlit app**
+
+   To launch the app, run:
 
    ```bash
    streamlit run app.py
    ```
+
+7. **View the application**
+
+   After running the above command, a local web page will open (usually at `http://localhost:8501/`) where you can interact with the app.
 
 ## 📄 Requirements
 
@@ -82,3 +89,8 @@ The app can currently detect the following skills:
 - c++
 
 _(More skills can easily be added by editing the `skills_to_look_for` list in the code.)_
+
+## 💬 Notes
+
+- If Streamlit does not open automatically, you can manually visit the URL printed in your terminal (usually `http://localhost:8501/`).
+- You can freely customise the skills list and improve the job search by adjusting the code.
